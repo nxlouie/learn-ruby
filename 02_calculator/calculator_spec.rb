@@ -80,20 +80,34 @@ end
 describe "#multiply" do
 
   it "multiplies two numbers"
-
+    multiply(3,4).should == 12
+  end
   it "multiplies several numbers"
-
+    multiply([2,3,4,5]).should == 120
+  end
 end
 
 describe "#power" do
   it "raises one number to the power of another number"
+    power(3,4).should == 81
+  end
 end
 
 # http://en.wikipedia.org/wiki/Factorial
 describe "#factorial" do
   it "computes the factorial of 0"
+    factorial(0).should == 1
+  end
   it "computes the factorial of 1"
+    factorial(1).should == 1
+  end
   it "computes the factorial of 2"
+    factorial(2).should == 2
+  end
   it "computes the factorial of 5"
+    factorial(5).should == 120
+  end
   it "computes the factorial of 10"
+    factorial(10).should == 362880
+  end
 end
